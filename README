@@ -1,0 +1,76 @@
+Phan Thanh San - S3342133
+Khuu Vinh Hoang Phuc - s3345250
+Vo Minh Nhut - S3393315
+Dang Kim Khanh - S3372771
+
+
+Phuc: ghostPhuc.c, ghostPhuc.h, level1.pac
+San: ghostSan.c, ghostSan.h, level2.pac
+Khanh: ghostKhanh.c, ghostKhanh.h, level3.pac
+Nhut: ghostNhut.c, ghostNhut.h, level4.pac
+
+1.BASIC FEATURES:
+-Run pacman.sh with command ./pacman.sh
+
+(a)the player should be able to move Pacman around the map, to eat pellets and power pellets
+Player change the direction of the pacman by arrow keys. 
+If the arrow key is same with the current direction of the pacman, it turns out to be a missed turn of pacman.
+
+(b)ghosts should move by themselves and be able to catch Pacman
+All the ghost move automatically by AI written by 4 members.
+The AI function decided by the numerical order of the ghost.
+
+(c)when power pellets are eaten, roles are reversed and Pacman can eat the ghosts
+When pacman get power pellets, all ghost turn into one colour (supposed to be green) and pacman can eat them.
+Ghosts will reborn after 5 turns at their original position.
+
+(d)points should be given to the player when eating pellets, ghosts and fruits
+Number of points increases everytime pacman eats pellets, ghosts and fruits.
+The game details are displayed next to the map with changing colours.
+
+(e)there should be 3 lives to start with, with bonus lives available later after reaching some score
+3 lives are given at the beginning of the game.
+Extra life is given when user get 5000 points.
+
+(f)at least 4 different playable levels.
+There are 4 default levels which are level1.pac, level2.pac, level3.pac, level4.pac.
+
+2.MENU
+
+The menu has 5 options:
+
+
+	1: PLAY NORMAL GAME
+PLAY NORMAL GAME allows users to play the game with 4 levels.
+To quit from this, type ":" then q.
+
+	2: MAP EDITOR
+MAP EDITOR allows user to customize their own map.
+MAP EDITOR loads the default.pac map.
+
+	3: HIGH SCORE TABLE
+HIGH SCORE TABLE allows user to see a list of 5 players with the highest scores.
+Press any key to return to main menu.
+
+	4: CREDITS
+CREDITS shows the credits of the game.
+Press any key to return to main menu.
+
+	5: EXIT PACMAN
+EXIT PACMAN exits from the game.
+
+3. INCREASING DIFFICULTY LEVELS:
+The number of ghost in the level1 is 2 and it increases to 4 in level2, level3, level4.
+The speed of ghost and pacman increases in each level.
+	Level1: 300/1000 second
+	Level2: 230/1000 second
+	Level3: 160/1000 second
+	Level4: 90/1000 second
+
+4.OPTIONAL FEATURES:
+CHEAT CODE:
+Type R then S P N K then pacman is in eating mode forever. R is to reset the input key. SPNK is the password to enter the cheat code.
+Type Q to quit the cheat code mode.
+
+
+

@@ -1,0 +1,27 @@
+[Configuration]
+ColorPalette4=#ffffffff0000
+MiscAlwaysShowTabs=FALSE
+MiscBell=FALSE
+MiscBordersDefault=TRUE
+MiscCursorBlinks=FALSE
+MiscCursorShape=TERMINAL_CURSOR_SHAPE_BLOCK
+MiscDefaultGeometry=80x24
+MiscInheritGeometry=FALSE
+MiscMenubarDefault=TRUE
+MiscMouseAutohide=FALSE
+MiscToolbarsDefault=FALSE
+MiscConfirmClose=TRUE
+MiscCycleTabs=TRUE
+MiscTabCloseButtons=TRUE
+MiscTabCloseMiddleClick=TRUE
+MiscTabPosition=GTK_POS_TOP
+MiscHighlightUrls=TRUE
+FontName=Monospace 18
+ColorPalette2=#ffff00000000
+ColorPalette3=#0000ffff0000
+ColorPalette5=#00000000ffff
+ColorPalette6=#ffff0000ffff
+ColorPalette7=#0000ffffffff
+ColorPalette8=#ffffffffffff
+ColorPalette9=#ffff5555ffff
+

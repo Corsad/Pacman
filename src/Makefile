@@ -1,0 +1,23 @@
+CC=clang
+CFLAGS=-Wall -g #-std=c99
+SOURCES = pacmanMain.c drawMap.c writeToFile.c readFromFile.c commandMode.c displayMap.c pacmanExecutor.c highScore.c credit.c writeHighScore.c checkWall.c editChar.c moveDir.c displayScore.c pacmanEating.c levelChange.c ghostNhut.c ghostKhanh.c ghostPhuc.c ghostSan.c
+OBJS = $(patsubst %.c,%.o,$(SOURCES))
+HEADERS = drawMap.h writeToFile.h readFromFile.h commandMode.h displayMap.h pacmanExecutor.h highScore.h credit.h writeHighScore.h checkWall.h editChar.h moveDir.h structEntity.h displayScore.h pacmanEating.h levelChange.h ghostNhut.h ghostKhanh.c ghostPhuc.h ghostSan.h
+
+pacman: $(OBJS) $(HEADERS) 
+	  $(CC) $(CFLAGS) -o pacman $(OBJS) -lncurses -lmenu
+
+%.o: %.c $(HEADERS)
+	$(CC) $(CFLAGS) -c -o $@ $<
+
+#$(OBJS): $(HEADERS)
+
+.PHONY: clean
+clean:
+	rm *.o 
+	
+.PHONY: cleanall
+cleanall:
+	rm *.o *~ $(EXECS)
+
+	
